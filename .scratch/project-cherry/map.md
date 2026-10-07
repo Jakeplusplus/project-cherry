@@ -36,6 +36,7 @@ A v1 spec for Project Cherry: a Flutter phone app (iOS first, Android too) that 
 - [State management and app architecture for a Flutter beginner](issues/04-state-management-architecture.md) — official Flutter MVVM (ChangeNotifier + provider + go_router) ranked first, Riverpod second; flips if a reactive-stream database is chosen. Input to the stack decision, not the decision itself.
 - [Local persistence options](issues/03-local-persistence-options.md) — Drift (SQLite) recommended, sqflite fallback; Isar/Hive/Realm/Floor ruled out. Caveat: Drift 3 in alpha. Reactive query streams available, which favours Riverpod in the state-management ranking. Input to the stack decision.
 - [On-device LLM feasibility for task breakdown](issues/01-on-device-llm-feasibility.md) — feasible only as an optional "suggest steps" button using OS-provided models (strong on iPhone 15 Pro+, weak on Android); no bundled model. Output quality unverified — spawned a prototype ticket.
+- [Background timer and lock-screen presence from Flutter](issues/02-background-timer-lock-screen.md) — no background timer: store start timestamp, compute elapsed. Overrun check-in = scheduled local notification. iOS Live Activity needs no push server but needs a native SwiftUI widget extension and caps at 8 h; Android needs no native code. Device behaviour unverified — spawned a prototype ticket.
 
 ## Not yet specified
 
