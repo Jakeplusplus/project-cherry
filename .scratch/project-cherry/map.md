@@ -33,6 +33,8 @@ A v1 spec for Project Cherry: a Flutter phone app (iOS first, Android too) that 
 
 <!-- one line per closed ticket -->
 
+- [State management and app architecture for a Flutter beginner](issues/04-state-management-architecture.md) — official Flutter MVVM (ChangeNotifier + provider + go_router) ranked first, Riverpod second; flips if a reactive-stream database is chosen. Input to the stack decision, not the decision itself.
+
 ## Not yet specified
 
 - **Insights screen content** — which patterns are shown and how; depends on what the micro-retro stores and on the evidence research.
