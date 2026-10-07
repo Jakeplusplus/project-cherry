@@ -37,6 +37,7 @@ A v1 spec for Project Cherry: a Flutter phone app (iOS first, Android too) that 
 - [Local persistence options](issues/03-local-persistence-options.md) — Drift (SQLite) recommended, sqflite fallback; Isar/Hive/Realm/Floor ruled out. Caveat: Drift 3 in alpha. Reactive query streams available, which favours Riverpod in the state-management ranking. Input to the stack decision.
 - [On-device LLM feasibility for task breakdown](issues/01-on-device-llm-feasibility.md) — feasible only as an optional "suggest steps" button using OS-provided models (strong on iPhone 15 Pro+, weak on Android); no bundled model. Output quality unverified — spawned a prototype ticket.
 - [Background timer and lock-screen presence from Flutter](issues/02-background-timer-lock-screen.md) — no background timer: store start timestamp, compute elapsed. Overrun check-in = scheduled local notification. iOS Live Activity needs no push server but needs a native SwiftUI widget extension and caps at 8 h; Android needs no native code. Device behaviour unverified — spawned a prototype ticket.
+- [Task breakdown techniques that lower the barrier to starting](issues/06-task-breakdown-techniques.md) — find one startable first step rather than a full plan ("can't start = step too big"); plan less than feels natural; bucket steps after listing; long/whole-day step triggers promotion. Three candidate guided sequences. Evidence is weak and none is app-delivered — treat as prototype input.
 
 ## Not yet specified
 
